@@ -1,0 +1,155 @@
+/* --- reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* --- variables --- */
+
+:root {
+  --bg-color: rgb(236, 236, 236);
+  --text-color: rgb(33, 33, 33);
+  --tools-color: rgb(13, 26, 42);
+
+  --title-font: 'Zilla Slab', sans-serif;
+  --title-fontsize: 5rem;
+  --subtitle-fontsize: 2rem;
+  /*rainbow colors*/
+  --r1-color: rgb(255, 0, 0);
+  --r2-color: rgb(255, 165, 0);
+  --r3-color: rgb(255, 255, 0);
+  --r4-color: rgb(0, 128, 0);
+  --r5-color: rgb(0, 0, 255);
+  --r6-color: rgb(0, 0, 255);
+  --r7-color: rgb(238, 130, 238);
+
+  /* --- title, body --- */
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font: 650 5rem var(--title-font);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: inline;
+  transition: 0.2s;
+}
+
+h1#i0:hover {
+  color: var(--r1-color);
+  transform: rotate3d(0, 1, 0, 45deg);
+}
+h1#i1:hover {
+  color: var(--r2-color);
+  transform: rotate3d(1, 0.5, 0.3, 45deg);
+}
+h1#i2:hover {
+  color: var(--r3-color);
+  transform: rotate3d(1, 1, 0, 45deg);
+}
+h1#i3:hover {
+  color: var(--r4-color);
+  transform: rotate3d(0, 1, 1, 45deg);
+}
+h1#i4:hover {
+  color: var(--r5-color);
+  transform: rotate3d(1, 1, 1, 45deg);
+}
+h1#i5:hover {
+  color: var(--r1-color);
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+h1#i6:hover {
+  color: var(--r7-color);
+  transform: rotate3d(0, 1, 0, 45deg);
+}
+h1#i7:hover {
+  color: var(--r2-color);
+  transform: rotate3d(0.4, 0.2, 0, 45deg);
+}
+h1#i8:hover {
+  color: var(--r3-color);
+  transform: scale3d(0.9, 1.5, 1);
+}
+h1#i9:hover {
+  color: var(--r4-color);
+  transform: rotate3d(0, 1, 0, 45deg);
+}
+
+h3 {
+  font: 500 2rem var(--title-font);
+  margin-left: 3rem;
+  color: var(--tools-color);
+}
+
+select {
+  margin-left: 3rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 12px 0.8;
+  color: var(--bg-color);
+  background-color: var(--tools-color);
+}
+
+div.shadow {
+  top: -715px;
+  right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45rem;
+  width: 55rem;
+  border-radius: 3px;
+  background-color: black;
+  z-index: -1;
+  position: relative;
+  filter: blur(2.7px);
+}
+
+.box {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45rem;
+  width: 55rem;
+  font: 300 1.2rem var(--title-font);
+  border-radius: 3px;
+  z-index: 0;
+  position: relative;
+  background-color: white;
+}
+
+textarea#input {
+  display: flex;
+  margin: 1rem 1rem;
+  resize: none;
+  border: none;
+  border-color: transparent;
+  overflow: auto;
+  outline: transparent;
+  height: 43rem;
+  width: 54rem;
+  font: 300 1.2rem var(--title-font);
+  color: var(--tools-color);
+}
+
+textarea#input::before {
+  content: '';
+  background-color: red;
+  display: flex;
+  width: 105%;
+  height: 105%;
+}
